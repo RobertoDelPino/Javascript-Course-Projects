@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <section class="lista-Productos">
+        <div class="encabezado">
+            <h2>Lista de Productos</h2>
+            <a href="#" class="editar">
+                <p class="btn-EditarProductos">Editar Productos</p>
+            </a>
+        </div>
+        <section class="sec-Añadir desactivado">
+            <form class="formularioAñadir">
+                <label><h3>Introduce un nuevo producto</h3></label><br>
+                <label>Nombre</label><br>
+                <input id="nombre" type="text"><br>
+                <label>Precio</label><br>
+                <input id="precio" type="text"><br>
+                <label>Descripcion</label><br>
+                <textarea name="" id="descripcion" cols="21" rows="3"></textarea><br>
+                <label><input class="btn-Agregar" type="submit" value="Añadir"></label>
+                <label><input class="btn-Limpiar" type="submit" value="Limpiar campos"></label>
+            </form>
+        </section>
+        <div class="productos"></div>
+    </section>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

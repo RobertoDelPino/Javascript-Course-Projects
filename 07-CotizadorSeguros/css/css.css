@@ -1,0 +1,109 @@
+body{
+    margin: 0em;
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    width: 60%;
+    margin: 2em auto;
+    background-color:turquoise;
+    padding: 1em ;
+}
+
+section h1{
+    background-color: aquamarine;
+    margin: 0em;
+    padding: .5em 0em;
+    text-align: center;
+}
+
+form{
+    width: 40%;
+    margin: 2em auto;
+    background-color:floralwhite;
+}
+
+form label{
+    font-weight: bold;
+    width: 55%;
+    margin: auto;
+    padding-top: 1em;
+    align-items: center;
+
+}
+
+form select{
+    width: 150px;
+    margin: 0em 1em;
+    padding: .5em;
+    border-radius: .4em;
+    border: 0em;
+    background-color:skyblue;
+    color: white;
+    font-weight: bold;
+}
+
+form h2{
+    text-align: center;
+    background-color:rgb(113, 201, 201);
+    width: 70%;
+    margin: 1em auto .5em auto;
+
+}
+
+form label.tipos{
+    padding-top:0em;
+    width: 48%;
+}
+
+label{
+    display: block;
+}
+
+form input.enviar{
+    width: 30%;
+    text-align: center;
+    background-color:teal;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: .4em;
+    margin: 4% 35% 1em;
+    border:.1em solid transparent;
+}
+
+form input.enviar:hover{
+    background-color: blue;
+    cursor: pointer;
+    border:.1em solid red;
+}
+
+.Seguro-Cotizado{
+    width: 50%;
+    margin: auto;
+    background-color: cadetblue;
+    color: white;
+    padding: 1em;
+}
+
+.Seguro-Cotizado p{
+    text-align: center;
+}
+
+.Seguro-Cotizado h4{
+    margin: 0em;
+    text-align: center;
+    background-color: cornflowerblue;
+    padding: 1em;
+}
+
+.cajaError{
+    width: 70%;
+    text-align: center;
+    padding: 1em 0em;
+    margin: auto;
+    background-color: rgb(255, 176, 176);
+    border: .2em solid rgb(188, 0, 0);
+    color: red;
+}

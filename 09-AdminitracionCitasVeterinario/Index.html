@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de citas veterinario</title>
+</head>
+<body>
+    <h1>ADMINISTRADOR DE PACIENTES DE VETERINARIA</h1>
+    <section class="cajaPadre">
+        <section class="cajaFormulario">
+            <h3>Datos del Paciente</h3>
+            <form>
+                <div>
+                    <label>Nombre Mascota: </label>
+                    <div>
+                        <input type="text" name="nombreMascota" id="nombre">
+                    </div>
+                </div>
+                <div>
+                    <label>Propietario: </label>
+                    <div>
+                        <input type="text" name="dueño" id="dueño">
+                    </div>
+                </div>
+                <div>
+                    <label>Teléfono: </label>
+                    <div>
+                        <input type="text" name="telefono" id="telefono">
+                    </div>
+                </div>
+                <div>
+                    <label>Fecha: </label>
+                    <div>
+                        <input type="date" name="fecha" id="fecha">
+                    </div>
+                </div>
+                <div>
+                    <label>Hora: </label>
+                    <div>
+                        <input type="time" name="hora" id="hora">
+                    </div>
+                </div>
+                <div>
+                    <label>Sintomas: </label>
+                    <div>
+                        <textarea name="sintomas" id="sintomas" cols=30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="CREAR CITA">
+                </div>
+            </form>
+        </section>
+        <section class="ListaCitas">
+            <h3>Administra tus Citas</h3>
+        </section>
+    </section>
+</body>
+</html>

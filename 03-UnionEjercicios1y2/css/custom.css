@@ -1,0 +1,132 @@
+body{
+    width: 80%;
+    margin: auto;
+}
+
+.sec-Añadir.desactivado{
+    display: none;
+}
+
+/* .sec-Añadir, .lista-Productos{
+    border: .1em solid black;
+} */
+
+.sec-Añadir form{
+    width: 250px;
+    margin: 1em auto;
+    background-color: rgb(92, 255, 128);
+    padding: 2em;
+    border-radius: 1em;
+    color: black;
+}
+
+.sec-Añadir form input, textarea{
+    margin: .5em 0em 1em 0em;
+}
+
+.sec-Añadir form .btn-Agregar{
+    background-color: bisque;
+    border:0;
+    padding: .5em;
+    cursor: pointer;
+    border: .1em solid transparent;
+}
+
+.sec-Añadir form .btn-Agregar:hover{
+    border: .1em solid black;
+}
+
+.sec-Añadir form .btn-Agregar.desactivado{
+    cursor: not-allowed;
+    background-color: red;
+    color: black;
+}
+
+/* Seccion de lista productos */
+
+.lista-Productos{
+    height: 1287px;
+    margin-top: 1em;
+}
+
+.lista-Productos .encabezado{
+    position: relative;
+    height: 10%;
+    border-radius: 2em;
+    background-color: rgb(206, 252, 159);
+}
+
+.lista-Productos div h2{
+    width: 30%;
+    padding: .7em;
+    float:left;
+}
+
+.lista-Productos div p{
+    margin: 1.45em;
+}
+
+.btn-EditarProductos{
+    background-color: aliceblue;
+    width: 150px;
+    border-radius: 1.5em;
+    padding: 1em;
+    text-align: center;
+    float: right;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1em;
+    border: .1em solid transparent;
+}
+
+.btn-EditarProductos:hover{
+    background-color: azure;
+    border: .1em solid black;
+}
+
+.productos{
+    width: 82.2%;
+    margin: 2em auto;
+}
+
+.producto{
+    border: .1em solid blue;
+    width: 15em; 
+    text-align: center;
+    float: left;
+}
+
+.producto h4, .producto h4+p{
+    margin:1em auto;
+    border-bottom: .1em solid red;
+    margin-bottom: 0em;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.producto h4+p+p{
+    height: 200px;
+    overflow: hidden;
+}
+
+/* Boton de eliminar producto */
+
+.El-desactivado{
+    display: none;
+}
+
+.caja-Eliminar{
+    position: absolute;
+    width: 20.5%;
+    height: 51px;
+}
+
+.producto .eliminar{
+    cursor: pointer;
+    border-radius: 2em;
+    background-color: rgb(207, 60, 60);
+    padding: 1em 1.2em;
+    margin:0em 0em 0em 11.55em;
+    width: 5%;
+}

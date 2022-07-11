@@ -1,0 +1,114 @@
+body{
+    margin: 0em;
+}
+
+header{
+    background-color:cadetblue;
+    height: 100px;
+}
+
+header div{
+    width: 85%;
+    height: 100%;
+    float:left;
+    margin-left: 2em;
+}
+
+/* Imagen Carrito */
+
+header .carrito{
+    width: 5%;
+    margin:.7em;
+    height: 75%;
+    border: .1em solid transparent;
+}
+
+header img{
+    height: 50px;
+    margin-top: 20px;
+}
+
+.carrito.activo{
+    border: .1em solid black;
+}
+
+/* Carrito compra -- Caja al activarse */
+
+.CajaCompra{
+    visibility: hidden;
+}
+
+.CajaCompra.activo{
+    visibility:visible;
+    z-index: 1;
+    width: 400px;
+    position: absolute;
+    top: 6em;
+    right: 5.5em;
+    background-color: blueviolet;
+    border-radius: .4em;
+}
+
+.CajaCompra.activo::after{
+    border:.5em solid transparent;
+    border-bottom: .5em solid blueviolet;
+    content: '';
+    position: relative;
+    top: -1.5em;
+    left: 92.1%;
+}
+
+.CajaCompra.activo table{
+    width: 100%;
+}
+
+.CajaCompra.activo table td, .CajaCompra.activo table th{
+    width: 33%;
+    text-align: center;
+}
+
+.CajaCompra.activo table td{
+    padding: .5em 0em;
+}
+
+.CajaCompra.activo table th{
+    padding: 1.5em 0em;
+}
+
+.CajaCompra.activo p{
+    text-align: center;
+}
+
+.CajaCompra.activo p a{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: .5em;
+}
+
+.CajaCompra.activo p a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+}
+
+.imgEliminar{
+    height: 20px;
+    width: 20px;
+}
+
+
+/* Objetos a vender */
+
+.VentaObjetos{
+    position: absolute;
+    top: 10em;
+    left: 5em;
+}
+
+.VentaObjetos a{
+    text-decoration: none;
+    color: azure;
+    padding: .5em;
+    background-color:coral;
+}

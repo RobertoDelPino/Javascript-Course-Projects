@@ -1,0 +1,84 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(115, 251, 251);
+}
+
+.PAPA{
+    background-color:white;
+    width: 80%;
+    margin: auto;
+}
+
+.PAPA .Contenedor-Titulo{
+    background-color:darkmagenta;
+    height: 10%;
+}
+
+.Contenedor-Titulo h2{
+    text-align: center;
+    padding: .5em 0em;
+    color: white;
+    font-weight: 100;
+    margin: 0em;
+}
+
+.Contenedor-Form{
+    margin-top: 3em;
+}
+
+form{
+    width: 35%;
+    margin: auto;
+}
+
+.texto{
+    width: 100%;
+    height: 50px;
+}
+
+.texto, .texto{
+    background-color:aliceblue;
+    border: .14em solid rgb(220, 220, 220);
+    /* box-shadow: 0em 0em .2em 0em gray; */
+}
+
+textarea.mensaje{
+    width: 100%;
+    height: 80px;
+}
+
+form p{
+    margin: 2em 0em 0em 0em;
+}
+
+.botones{
+    margin: 2em .8em;
+    width: 43%;
+    height: 50px;
+    font-weight: bold;
+    color: white;
+    border: 0em;
+}
+
+.btn-Enviar{
+    background-color: rgb(74, 146, 255);
+}
+
+.btn-Enviar:hover{
+    background-color: rgb(108, 156, 227);
+}
+
+.btn-Enviar.desactivado{
+    background-color: rgb(151, 190, 249);
+    cursor: no-drop;
+}
+
+.btn-Resetear{
+    background-color: rgb(53, 179, 53);
+}
+
+.btn-Resetear:hover{
+    background-color: rgb(106, 199, 106);
+    cursor: pointer;
+}
+

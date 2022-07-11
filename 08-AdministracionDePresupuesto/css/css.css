@@ -1,0 +1,159 @@
+body{
+    background-color:whitesmoke;
+}
+
+
+.cajaPadre{
+    width: 60%;
+    margin: auto;
+}
+
+h3{
+    text-align: center;
+}
+
+.AgregarGasto, .ListaGastos{
+    float: left;
+}
+
+.AgregarGasto{
+    width: 45%;
+}
+
+.ListaGastos{
+    float: left;
+    width: 350px;
+}
+
+
+form input#nombre, form input#precio{
+    width: 90%;
+    padding: 1em;
+    border-radius: .3em;
+    border:0em;
+}
+
+.cajaInput{
+    width: 80%;
+    margin: auto;
+}
+
+form div{
+    width: 30%;
+    margin: auto;
+}
+
+form div input#enviar{
+    background-color:rgb(7, 209, 142);
+    border: .1em solid transparent;
+    padding: 1em;
+    transition: all .3s;
+}
+
+form div input#enviar:hover{
+    background-color:aquamarine;
+    border: .1em solid black;
+    cursor: pointer;
+}
+
+/* Apartado de presupuestos */
+
+.presupuesto{
+    width: 495px;
+    border-radius: 2em;
+    padding: .3em;
+    margin: 1em 0em;
+}
+
+.PresupuestoTotal{
+    color:#004085;
+    background-color: #bbdcff;
+    padding: .5em 0em;
+    margin-top: 1em;
+    border-radius: .5em;
+}
+
+.PresupuestoTotal p, .cantidadRestante p{
+    margin: 0em;
+    padding: 0em 1em;
+    font-weight: bold;
+}
+
+.cantidadRestante{
+    padding: .5em 0em;
+    margin-top: .5em;
+    border-radius: .5em;
+}
+
+.buenaCantidad{
+    color: #155724;
+    background-color: #d4edda;
+}
+
+.mediaCantidad{
+    color: #856404;
+    background-color: #fff3cd;
+}
+
+.insuficienteCantidad{
+    color: #721c24;
+    background-color: #f8d7da;
+}
+
+.Inicial{
+    background-color: greenyellow;
+}
+
+.Restante{
+    background-color: blue;
+}
+
+.gastoMuestra{
+    background-color: rgb(228, 228, 228);
+    border: .1em solid rgb(230, 225, 225);
+    width: 90%;
+    margin: auto;
+    border-radius: 1em;
+    position: relative;
+    margin-top: .2em;
+}
+
+.gastoMuestra:hover{
+    top: -.3em;
+    background-color: rgb(223, 223, 223);
+}
+
+.gastoMuestra .btn-Eliminar{
+    border-radius: 2em;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    width: 10%;
+}
+
+.gastoMuestra p {
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Mensaje de error */
+
+.error{
+    background-color: rgb(247, 120, 120);
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: .5em 0em;
+    border-radius: .4em;
+    margin-bottom: .5em;
+}
+
+.error p{
+    margin: 0em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: .8em;
+}
