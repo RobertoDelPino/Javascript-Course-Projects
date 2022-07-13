@@ -1,0 +1,129 @@
+body{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.cajaPadre{
+    width: 60%;
+    margin: auto;
+}
+
+.cajaFormulario, .ListaCitas{
+    width: 45%;
+    margin: 0em 1em;
+    display: block;
+    /* border: .1em solid black; */
+    float: left;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.6em;
+    margin: 0em;
+    margin-top: .5em;
+    padding: .3em 0em;
+    background-color: rgb(124, 255, 198);
+}
+
+/* Formulario */ 
+
+table{
+    width: 95%;
+    margin: 1em auto 0em auto;
+}
+
+/* tr{
+    Aqui debo poner espacio entre cada tr 
+} */
+
+tr td:first-child{
+    text-align: center;
+}
+
+input{
+    width: 90%;
+}
+
+label{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.cajaEnviar{
+    width: 50%;
+    margin: auto;
+}
+
+.btn-Enviar{
+    margin: auto;
+    height: 3em;
+    cursor: pointer;
+    background-color: rgb(72, 225, 159);
+    border: 0em;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.btn-Enviar:hover{
+    background-color: azure;
+}
+
+/* Lista de citas */
+
+li{
+    list-style: none;
+}
+
+li h4, li p{
+    margin: 0em;
+    font-weight: bold;
+}
+
+li h4{
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
+li p span{
+    font-weight: 100;
+}
+
+/* Botones para cada cita */
+
+.btn-Cita{
+    margin-top: .5em;
+}
+
+.btn-Cita .eliminar, .btn-Cita .editar{
+    width: 100px;
+    height: 50px;
+    color: white;
+    border: .2em solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-Cita .eliminar{
+    background-color: rgb(255, 129, 129);
+}
+
+.btn-Cita .eliminar:hover{
+    border: .2em solid red;
+    background-color: rgb(255, 77, 77);
+}
+
+.btn-Cita .editar{
+    background-color: rgb(136, 191, 255);
+}
+
+.btn-Cita .editar:hover{
+    border: .2em solid rgb(0, 102, 255);
+    background-color: rgb(29, 157, 255);
+}

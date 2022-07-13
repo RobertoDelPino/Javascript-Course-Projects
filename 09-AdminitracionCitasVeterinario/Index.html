@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración de citas veterinario</title>
+    <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
     <h1>ADMINISTRADOR DE PACIENTES DE VETERINARIA</h1>
@@ -12,49 +13,77 @@
         <section class="cajaFormulario">
             <h3>Datos del Paciente</h3>
             <form>
-                <div>
-                    <label>Nombre Mascota: </label>
-                    <div>
-                        <input type="text" name="nombreMascota" id="nombre">
-                    </div>
-                </div>
-                <div>
-                    <label>Propietario: </label>
-                    <div>
-                        <input type="text" name="dueño" id="dueño">
-                    </div>
-                </div>
-                <div>
-                    <label>Teléfono: </label>
-                    <div>
-                        <input type="text" name="telefono" id="telefono">
-                    </div>
-                </div>
-                <div>
-                    <label>Fecha: </label>
-                    <div>
-                        <input type="date" name="fecha" id="fecha">
-                    </div>
-                </div>
-                <div>
-                    <label>Hora: </label>
-                    <div>
-                        <input type="time" name="hora" id="hora">
-                    </div>
-                </div>
-                <div>
-                    <label>Sintomas: </label>
-                    <div>
-                        <textarea name="sintomas" id="sintomas" cols=30" rows="10"></textarea>
-                    </div>
-                </div>
-                <div>
-                    <input type="submit" value="CREAR CITA">
+                <table>
+                    <tr>
+                        <td>
+                            <label>Nombre Mascota: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="nombreMascota" id="nombre">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Propietario: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="dueño" id="dueño">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Teléfono: </label>
+                        </td>
+                        <td>
+                            <input type="tel" name="telefono" id="telefono">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Fecha: </label>
+                        </td>
+                        <td>
+                            <input type="date" name="fecha" id="fecha">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Hora: </label>
+                        </td>
+                        <td>
+                            <input type="time" name="hora" id="hora">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Sintomas: </label>
+                        </td>
+                        <td>
+                            <textarea name="sintomas" id="sintomas" cols=30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <div class="cajaEnviar">
+                    <input class="btn-Enviar" type="submit" value="CREAR CITA">
                 </div>
             </form>
         </section>
         <section class="ListaCitas">
             <h3>Administra tus Citas</h3>
+            <ul>
+                <li>
+                    <h4>Nombre Mascota</h4>
+                    <p>Propietario: <span>nombrePropietario</span></p>
+                    <p>Teléfono: <span>telefono</span></p>
+                    <p>Fecha: <span>fecha</span></p>
+                    <p>Hora: <span>hora</span></p>
+                    <p>Síntomas: <span>sintomas</span></p>
+                    <div class="btn-Cita">
+                        <input class="eliminar" type="button" value="Eliminar">
+                        <input class="editar" type="button" value="Editar">
+                    </div>
+                </li>
+            </ul>
         </section>
     </section>
 </body>
