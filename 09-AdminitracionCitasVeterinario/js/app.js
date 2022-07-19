@@ -125,7 +125,14 @@ class ListaPacientes{
     // Mostrar Mensaje de error
 
     MostrarError(mensaje) {
-        console.log("Error! " + mensaje);
+        const cajaForm = document.querySelector('.cajaFormulario');
+        const div = document.createElement('p');
+        div.textContent = "Error! " + mensaje;
+        div.classList.add('error');
+        cajaForm.insertBefore(div,formulario);
+        setTimeout( () =>  {
+            document.querySelector('.error').remove();
+        }, 2100);
     }
 
 }
