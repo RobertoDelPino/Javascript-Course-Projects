@@ -6,6 +6,7 @@ const inputTelefono = document.querySelector('#telefono');
 const inputFecha = document.querySelector('#fecha');
 const inputHora = document.querySelector('#hora');
 const inputSintomas = document.querySelector('#sintomas');
+
 export class ListaPacientes{
     constructor()
     {
