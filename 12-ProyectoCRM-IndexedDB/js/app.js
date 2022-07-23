@@ -1,3 +1,5 @@
+import { CrearAbrirBD } from "./database.js";
+
 const parteIzq = document.querySelector(".parteIzq");
 
 añadirEventListener();
@@ -5,6 +7,7 @@ añadirEventListener();
 function añadirEventListener()
 {
     document.addEventListener("DOMContentLoaded", () =>{
+        CrearAbrirBD();
         let div = document.createElement("div");
         div.innerHTML = `
             <h1>CRM - INDEXEDDB</h1>
