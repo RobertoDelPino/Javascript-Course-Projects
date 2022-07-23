@@ -1,0 +1,53 @@
+.parteDer{
+    background-color: aliceblue;
+}
+
+.parteDer h1{
+    margin: 0em;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.cajaForm{
+    width: 50%;
+    margin: auto;
+    height: 50%;
+}
+
+form{
+    width: 90%;
+    padding:1.5em 1em;
+    margin: auto;
+    background-color: white;
+    border-radius: 1em;
+}
+
+label,input{
+    display: block;
+}
+
+label{
+    margin: .5em 0em;
+}
+
+input{
+    width: 100%;
+    border-radius: .5em;
+    height: 30px;
+    border: .05em solid rgb(214, 214, 214);
+}
+
+#btnEnviar{
+    height: 40px;
+    background-color: #319795;
+    color: white;
+    font-weight: bold;
+    border: 0em;
+    border-radius: 0em;
+}
+
+#btnEnviar:hover{
+    background-color: #2c7574;
+    cursor: pointer;
+}
+
