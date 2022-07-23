@@ -76,10 +76,12 @@ export function MostrarTodosLosCLientes()
             let tr = document.createElement('tr');
             tr.innerHTML = `
             <td>${elemento.value.nombre}</td>
+            <td>${elemento.value.correo}</td>
             <td>${elemento.value.telefono}</td>
             <td>${elemento.value.empresa}</td>
-            <td>hola</td>
+            <td><button id="eliminar">Eliminar</button><button id="editar">Editar</button></td>
             `;
+            tr.id = elemento.value.id;
 
             const tbody = document.querySelector("tbody");
             tbody.appendChild(tr);
@@ -91,16 +93,29 @@ export function MostrarTodosLosCLientes()
 
 // - Eliminar cliente
 
-function EliminarCliente(id)
+export function EliminarCliente(id)
 {
     let datos = CogerDatos();
-    datos.delete(id);
+    datos.delete(Number(id));
 }
 
 // - Editar cliente
 
-function EditarCliente()
+export function EditarCliente(id)
 {
+    // const nombre = document.querySelector("#nombre");
+    // const correo = document.querySelector("#correo");
+    // const telefono = document.querySelector("#telefono");
+    // const empresa = document.querySelector("#empresa");
+
+    let datos = CogerDatos();
+    datos.get(Number(id)).onsuccess = (event) =>{
+        // console.log(event.srcElement.result)
+        nombre.value = event.srcElement.result.nombre;
+        correo.value = event.srcElement.result.correo;
+        telefono.value = event.srcElement.result.telefono;
+        empresa.value = event.srcElement.result.empresa
+    };
 
 }
 
