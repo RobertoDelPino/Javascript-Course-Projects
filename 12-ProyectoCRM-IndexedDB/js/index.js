@@ -1,4 +1,4 @@
-import { EditarCliente, EliminarCliente, MostrarTodosLosCLientes } from "./database.js";
+import {EliminarCliente, MostrarTodosLosCLientes } from "./database.js";
 
 const h5 = document.querySelector("h5");
 const tbody = document.querySelector("tbody");
@@ -19,10 +19,12 @@ function añadirEventListener()
         else{
             if(e.target.id == "editar"){
                 let url = location.href.replace("Index","Nuevo-Cliente");
-                location.href = url ;
-
-                // Falta editar el cliente, que no se me ocurre ahora mismo nada
-                // EditarCliente(e.target.parentElement.parentElement.id);
+                const id = e.target.parentElement.parentElement.id;
+                if(url.indexOf("?id=") != -1){
+                    url = url.substring(0, url.indexOf("?id="));                    
+                }
+                url = url + "?id=" + id;
+                location.href = url;
             }
         }
     })
@@ -34,5 +36,3 @@ function ContarClientes(){
         h5.innerText = "Hay " + tr.length + " Cliente/s"
     },70);
 }
-
-

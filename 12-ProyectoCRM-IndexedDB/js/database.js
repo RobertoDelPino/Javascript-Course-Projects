@@ -101,22 +101,37 @@ export function EliminarCliente(id)
 
 // - Editar cliente
 
-export function EditarCliente(id)
+export function EditarCliente()
 {
-    // const nombre = document.querySelector("#nombre");
-    // const correo = document.querySelector("#correo");
-    // const telefono = document.querySelector("#telefono");
-    // const empresa = document.querySelector("#empresa");
+    const parametroURL = new URLSearchParams(window.location.search);
+    let id = parametroURL.get("id");
+    let datos = CogerDatos().get(Number(id));
+    datos.onsuccess = function(event)
+    {
+        nombre.value = event.target.result.nombre;
+        telefono.value = event.target.result.telefono;
+        correo.value = event.target.result.correo;
+        empresa.value = event.target.result.empresa;
+    }
+}
 
-    let datos = CogerDatos();
-    datos.get(Number(id)).onsuccess = (event) =>{
-        // console.log(event.srcElement.result)
-        nombre.value = event.srcElement.result.nombre;
-        correo.value = event.srcElement.result.correo;
-        telefono.value = event.srcElement.result.telefono;
-        empresa.value = event.srcElement.result.empresa
+export function ActualizarCliente(id, nombre, correo, telefono, empresa)
+{
+    var datos = CogerDatos();
+    datos.delete(Number(id));
+    let cliente = {
+        id : id,
+        nombre : nombre,
+        correo : correo,
+        telefono : telefono,
+        empresa : empresa
     };
 
+    datos.add(cliente);
+    setTimeout(() => {
+        let url = location.href.replace("Nuevo-Cliente","Index");
+        location.href = url ;
+    }, 1000)
 }
 
 // - Eliminar todos los clientes del HTML
