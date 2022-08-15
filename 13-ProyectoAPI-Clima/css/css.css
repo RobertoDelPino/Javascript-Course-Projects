@@ -1,0 +1,52 @@
+body{
+    background-color: aqua;
+}
+
+h2{
+    margin: 1em auto;
+    width: 9em;
+}
+
+form{
+    border: .1em solid black;
+    width: 400px;
+    margin: auto;
+}
+
+form input, form select{
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin: .5em auto;
+    border-radius: .5em;
+    border: 0em;
+}
+
+input#cargarAPI{
+    background-color: yellow;
+    height: 40px;
+    margin: 2em auto .5em auto;
+}
+
+input#cargarAPI:hover{
+    background-color: rgb(255, 255, 107);
+    cursor: pointer;
+    border: .1em solid rgb(135, 86, 86);
+}
+
+#contenido{
+    background-color: aliceblue;
+    width: 400px;
+    margin: 2em auto 0em auto;
+    border-radius: .5em;
+}
+
+#contenido p, #contenido h1{
+    text-align: center;
+    margin: 0em;
+    padding: .7em;
+}
+
+#contenido h1{
+    padding: .5em ;
+}
