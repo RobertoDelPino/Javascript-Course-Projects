@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(64, 64, 171);
+}
+
+.cajaPadre{
+    width: 50em;
+    margin: auto;
+    background-color: white;
+    padding: 1em 0em;
+}
+
+h1{
+    text-align: center;
+    padding-top: 1em;
+}
+
+.derecha,.izquierda{
+    width: 24em;
+    margin: auto;
+    display: inline-table;
+    /* border:.1em solid black; */
+}
+
+form{
+    width: 80%;
+    margin: auto;
+}
+
+input{
+    width: 80%;
+    margin: .5em auto;
+    height: 40px;
+}
+
+input#buscar{
+    height: 30px;
+
+}
+
+.contenido p{
+    margin: 0em;
+}
