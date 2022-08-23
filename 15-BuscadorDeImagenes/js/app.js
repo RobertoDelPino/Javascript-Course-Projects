@@ -1,21 +1,36 @@
 const btnBuscar = document.querySelector("#enviarBTN");
 btnBuscar.addEventListener("click", (e) => {
     e.preventDefault();
+    RealizarBusqueda();
+})
+
+
+document.addEventListener("DOMContentLoaded",() =>{
+    const numeroPagina = document.querySelector(".numeroPagina");
+    numeroPagina.addEventListener("click", e => {
+        if(e.target.id == "btnNumeroPag"){
+            const hiddenBtn = document.querySelector("#numPag");
+            hiddenBtn.name = e.target.classList.value;
+            RealizarBusqueda();
+        }
+    })
+})
+
+function RealizarBusqueda()
+{
     const textoBusqueda = document.querySelector("#textoBusqueda").value;
-    let link = "https://pixabay.com/api/?key=29437212-b8b72f58ce7fc30470fd85277&q=" + textoBusqueda + "&image_type=photo"
+    const numPag = document.querySelector("#numPag").name;
+    let link = "https://pixabay.com/api/?key=29437212-b8b72f58ce7fc30470fd85277&q=" + textoBusqueda + "&image_type=photo&page=" + numPag;
 
     fetch(link)
         .then(resultado =>{
             return resultado.json();
         })
         .then(resultado => {
-            console.log(resultado);
             MostrarResultados(resultado);
             MostrarNumeroPaginas(resultado.totalHits);
         })
-    
-})
-
+}
 
 function MostrarResultados(listado)
 {
@@ -36,9 +51,9 @@ function MostrarNumeroPaginas(total)
     let numeroPagina = document.querySelector(".numeroPagina");
     numeroPagina.innerHTML = "";
 
-    for(let numero = 0; numero < totalPaginas; numero++){
+    for(let numero = 1; numero <= totalPaginas; numero++){
         numeroPagina.innerHTML += `
-        <button>${numero}</button>
+        <button id="btnNumeroPag" class="${numero}">${numero}</button>
     `
     }
 }
