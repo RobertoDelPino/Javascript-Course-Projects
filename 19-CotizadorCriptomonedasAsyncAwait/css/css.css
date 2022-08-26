@@ -1,0 +1,60 @@
+body{
+    background-color: cadetblue;
+}
+
+body h2{
+    text-align: center;
+}
+
+form{
+    width: 250px;
+    margin: auto;
+}
+
+form select{
+    display: block;
+    width: 100%;
+    margin: 1em 0em;
+    padding: 1em;
+}
+
+form div{
+    width: 50%;
+    margin: auto;
+}
+
+form div input{
+    color: white;
+    width: 100%;
+    padding: .8em;
+    background-color: rgb(98, 98, 224);
+    border: .1em solid transparent;
+    margin: auto;
+}
+
+form div input:hover{
+    background-color: rgb(76, 76, 165);
+    border: .1em solid black;
+    cursor: pointer;
+}
+
+div.contenido{
+    width: 24.5%;
+    margin: auto;
+    border: .1em solid black;
+    background-color: rgb(241, 241, 241);
+    padding: 1em;
+    margin-top: 1em;
+}
+
+div.contenido h3{
+    font-size: large;
+}
+
+div.contenido p{
+    font-size: large;
+}
+
+div.contenido.invisible{
+    display: none;
+}
