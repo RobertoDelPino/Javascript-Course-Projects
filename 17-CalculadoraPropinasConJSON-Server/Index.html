@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <header>
+        <h2>Calculadora de consumas y propinas</h2>
+    </header>
+
+    <p class="btnNuevaOrden">Nueva Orden</p>
+    <div class="cajaForm invisible">
+        <div>
+            <h1>Restaurante App</h1>
+            <p>X</p>
+        </div>
+        <form>
+            <div class="mesa-hora">
+                <label>Mesa</label>
+                <input type="number" name="numeroMesa" id="mesa">
+                <label>Hora</label>
+                <input type="time" name="numeroHora" id="hora">
+            </div>
+            <div class="botones">
+                <input type="submit" id="btnCerrar" value="Cerrar">
+                <input type="submit" id="btnAgregarOrden" value="Crear Orden">
+            </div>
+        </form>
+    </div>
+    
+    <div class="caja platillos invisible">
+        <h2>Platos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Categoría</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div class="caja resumen invisible">
+        <h2>Resumen de Consumo</h2>
+        <p class="mesaHora"></p>
+        <div class="cajaPadre">
+            <div class="resumenPlatos"></div>
+            <div class="Propina">
+                <h2>Propina</h2>
+                <form>
+                    <p><input type="radio" name="propina" id="propina" class="0" checked>0%</p>
+                    <p><input type="radio" name="propina" id="propina" class="10">10%</p>
+                    <p><input type="radio" name="propina" id="propina" class="20">20%</p>
+                    <p><input type="radio" name="propina" id="propina" class="35">35%</p>
+                </form>
+
+                <br>
+                <p class="totalPrecio">Total: 0€</p>
+                <p class="totalPropina">Total con propina: 0€</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+body{
+    margin: 0em;
+}
+
+header{
+    background-color: black;
+}
+
+header h2{
+    text-align: center;
+    color: white;
+    margin: 0em;
+    padding: 1em;
+    font-size: xx-large;
+}
+
+.btnNuevaOrden{
+    padding: 1em;
+    background-color: aqua;
+    width: 90px;
+    margin: 1em auto;
+}
+
+.btnNuevaOrden:hover{
+    cursor: pointer;
+    background-color: rgb(55, 193, 193);
+}
+
+.btnNuevaOrden.invisible{
+    display: none;
+}
+
+/* Formulario Agregar orden */
+
+div.invisible{
+    display: none;
+}
+
+.cajaForm{
+    width: 400px;
+    height: 350px;
+    border: .1em solid black;
+    margin: auto;
+    position: relative;
+    top: 1em;
+}
+
+.cajaForm div{
+    width: 90%;
+    margin: auto;
+}
+
+.cajaForm div h1, .cajaForm div p{
+    display: inline-block;
+}
+
+.cajaForm div h1{
+    width: 90%;
+}
+
+.cajaForm div p{
+    font-size: x-large;
+    border:0.1em solid transparent;
+}
+
+.cajaForm div p:hover{
+    font-weight: bold;
+    cursor: pointer;
+    border:0.1em solid black;
+}
+
+.cajaForm form{
+    border-top: .1em solid grey;
+}
+
+.cajaForm form .mesa-hora{
+    border-bottom: .1em solid grey;
+}
+
+.cajaForm form div.mesa-hora label, .cajaForm form div.mesa-hora input{
+    display: block;
+}
+
+.cajaForm form div.mesa-hora label{
+    margin: .5em 0em;
+    font-weight: bold;
+    font-size: large;
+}
+
+.cajaForm form div.mesa-hora input{
+    width: 90%;
+    height: 25px;
+    margin-bottom: 2em;
+}
+
+.cajaForm form div.mesa-hora input:hover{
+    border: 0.15em solid black;
+}
+
+.cajaForm form div.botones{
+    width: 45%;
+    margin: 1.5em auto;
+}
+
+.cajaForm form div.botones input{
+    border: 0;
+    padding: .8em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.cajaForm form div.botones input:first-child{
+    background-color: blue;
+}
+
+.cajaForm form div.botones input:last-child{
+    background-color: rgb(49, 255, 49);
+}
+
+.cajaForm form div.botones input:first-child:hover{
+    background-color: rgb(74, 74, 255);
+    cursor: pointer;
+}
+
+.cajaForm form div.botones input:last-child:hover{
+    cursor: pointer;
+    background-color: rgb(109, 255, 109);
+}
+
+
+/* Caja Platos y Resumen */
+
+.caja{
+    background-color: rgb(224, 224, 224);
+    width: 90%;
+    margin: auto ;
+    padding-bottom: 2em;
+}
+
+.caja h2{
+    text-align: center;
+    padding: 1em 0em .5em 0em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mesaHora{
+    text-align: center;
+    font-weight: bold;
+}
+
+.resumenPlatos, .Propina{
+    display: inline-table;
+    width: 48.7%;
+}
+
+.Propina{
+    border-left:0.1em solid black;
+    height: 250px;
+}
+
+.Propina form{
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    padding: .5em;
+}
+
+.Propina form input{
+    display: inline-block;
+}
+
+.Propina p{
+    width: 60%;
+    margin: 1em auto;
+    display: block;
+}
+
+
+/* Tabla de platos */
+
+table{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th,td{
+    width: 500px;
+    height: 50px;
+    border-top: .1em solid rgb(185, 185, 185);
+}
+
+td{
+    text-align: center;
+}
