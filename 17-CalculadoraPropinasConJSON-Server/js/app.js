@@ -181,16 +181,15 @@ function MostrarPrecio()
 {
     const totalPrecio = document.querySelector(".totalPrecio");
     const totalPropina = document.querySelector(".totalPropina");
-    const propina = document.querySelector('input[name=propina]:checked').classList;
-    console.log(propina)
+    cliente.propina = document.querySelector('input[name=propina]:checked').classList;
 
-    let precioTotal = 0;
+    cliente.precioFinal = 0;
     cliente.pedido.forEach(pedido => {
-        precioTotal += pedido.cantidad * pedido.precio;
+        cliente.precioFinal += pedido.cantidad * pedido.precio;
     })
 
-    totalPrecio.textContent = "Total: " + precioTotal + "€";
-    totalPropina.textContent = "Total con propina: " + (precioTotal + (precioTotal * (parseInt(propina) / 100))) + "€";
+    totalPrecio.textContent = "Total: " + cliente.precioFinal + "€";
+    totalPropina.textContent = "Total con propina: " + (cliente.precioFinal + (cliente.precioFinal * (parseInt(cliente.propina) / 100))) + "€";
 }
 
 function EliminarPedido(id)
@@ -223,6 +222,3 @@ function MostrarResultados(informacion)
         `
     });
 };
-
-
-
