@@ -1,0 +1,44 @@
+body{
+    margin:0em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cajaPadre{
+    width: 100%;
+}
+
+.parteDer{
+    width: 80%;
+}
+
+.parteIzq{
+    width: 20%;
+    background-color: #319795;
+    color: white;
+}
+
+.parteDer,.parteIzq{
+    float: left;
+    height: 500px;
+}
+
+.parteIzq div{
+    width: 80%;
+    margin: auto;
+}
+
+.parteIzq div div{
+    margin: 0em;
+    width: 100%;
+}
+
+.parteIzq div div a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding:.5em;
+}
+
+.parteIzq div div a:hover{
+    background-color: rgb(98, 98, 98);
+}
