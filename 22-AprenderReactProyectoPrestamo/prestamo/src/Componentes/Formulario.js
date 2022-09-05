@@ -1,10 +1,11 @@
-import React from "react";  
+import React from "react";
+import { CalcularPrestamo } from "./Helpers";
 
 function Formulario({cantidad, setCantidad, meses, setMeses, totalPagar}){
 
     function calcularPagoTotal (e) {
         e.preventDefault()
-        totalPagar(meses*cantidad)
+        totalPagar(CalcularPrestamo(meses, cantidad))
     }
 
     return (
