@@ -1,0 +1,43 @@
+form{
+    background-color: aquamarine;
+    width: 350px;
+    margin: auto;
+}
+
+form #numeroLetras{
+    width: 95%;
+}
+
+
+
+.caja-CheckBox{
+    border: .1em solid black;
+}
+
+.linea-checkbox p{
+    display: inline-block;
+}
+
+.linea-submit{
+    width: 40%;
+    margin: auto;
+}
+
+#btn-GeneratePassword{
+    margin: auto;
+}
+
+.caja-resultado{
+    width: 90%;
+    margin: auto;
+}
+
+.caja-resultado p{
+    width: 70%;
+    display: inline-block;
+}
+
+.caja-resultado div{
+    width: 25%;
+    display: inline-block;
+}
